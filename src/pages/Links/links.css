@@ -1,0 +1,111 @@
+.links-container {
+    max-width: 1120px;
+    margin: 32px auto 0 auto;
+    animation: slide 2s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(-150px)
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+.links-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.links-header svg {
+    margin-right: 14px;
+}
+
+.links-header h1 {
+    color: #fff;
+}
+
+.links-item {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.links-item:last-child {
+    margin-bottom: 18px;
+}
+
+.link {
+    border: 0;
+    width: 100%;
+    min-width: 80%;
+    border-radius: 4px;
+    height: 46px;
+    background-color: rgb(255, 255, 255, 0.15);
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link svg {
+    margin-right: 14px;
+}
+
+.link-delete {
+    border: 0;
+    background: transparent;
+}
+
+.links-empty {
+    border: 0;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255, 0.15);
+    margin-top: 28px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 18px;
+    color: #FFF;
+    transition: transform 0.4s;
+}
+
+.links-empty:hover {
+    transform: scale(1.04);
+}
+
+.empty-text {
+    color: #FFF;
+}
+
+@media (max-width: 715px) {
+    .links-container {
+        width: 90%;
+    }
+
+    .links-item {
+        width: 100%;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    .link svg {
+        display: none;
+    }
+
+}
