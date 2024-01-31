@@ -44,29 +44,29 @@ export default function Home() {
       </div>
 
       <div className="area-input">
-        
+
         <div>
           <FiLink size={24} color="#fff" />
           <input
             placeholder="Cole seu link aqui..."
             value={Link}
-            onChange={ (e) => setLink(e.target.value)}
+            onChange={(e) => setLink(e.target.value)}
           />
         </div>
 
         <button onClick={shortenLink}>Encurtar Link</button>
-      
+
       </div>
 
-      <Menu/>
-      
+      <Menu />
+
       {
         showModal && (
-        <LinkItem 
-          closeModal={ () => setShowModal(false) }
-          content={data}
-        />
-      ) }
+          <LinkItem
+            closeModal={() => setShowModal(false)}
+            content={data}
+          />
+        )}
 
     </div>
   )
