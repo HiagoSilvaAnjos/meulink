@@ -17,7 +17,7 @@ export default function LinkItem({ closeModal, content }) {
                     <FiX size={28} color="#000" />
                 </button>
             </div>
-            
+
             <span>
                 {content.long_url}
             </span>
