@@ -1,4 +1,4 @@
-# Ecurtador Link
+# Encurtador Link
 
 Este é um aplicativo de encurtamento de links desenvolvido com React. Permite ao usuário inserir um link, encurtá-lo e visualizar seus links encurtados na página "Meus Links".
 
